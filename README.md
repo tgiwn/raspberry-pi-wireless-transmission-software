@@ -72,7 +72,7 @@ The tests cover message framing, strict UTF-8 message decoding, filename sanitiz
 
 ## Copyright and provenance
 
-This independent recreation/prototype is not the registered software's original source code. The supplied certificate title is 基于树莓派的无线传输软件 V1.0 (registration number stated on the supplied certificate: 2026SR0573929). The certificate names 天津职业技术师范大学（中国职业培训指导教师进修中心） as the copyright holder. This repository does not imply ownership of the registered work or permission to redistribute its original source/assets. Confirm authorization before public release and describe this code accurately in applications.
+This independent recreation/prototype is not the registered software's original source code. The supplied certificate title is 基于树莓派的无线传输软件 V1.0 (registration number stated on the supplied certificate: 2026SR0573929). The certificate names 天津职业技术师范大学（中国职业培训指导教师进修中心） as the copyright holder. This repository does not imply ownership of the registered work or permission to redistribute its original source/assets.
 
 
 
