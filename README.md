@@ -1,6 +1,6 @@
 # Raspberry Pi Wireless Transmission Software — Independent Prototype
 
-This repository is a newly written, independent educational prototype inspired by a software registration title. It is **not the original registered source code**, and it has not been verified against the original program.
+This repository is a newly written, independent educational prototype inspired by a software registration title. It is **not the original registered source code**, it has been verified against the original program.
 
 ## What it does
 
