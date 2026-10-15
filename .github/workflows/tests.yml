@@ -1,0 +1,46 @@
+name: Test prototype
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Exercise TCP streaming path (101 MiB)
+        env:
+          RUN_LARGE_TRANSFER_TEST: "1"
+          TRANSFER_TEST_MIB: "101"
+        run: python -m unittest tests.test_large_transfer -v
+      - name: Compile source
+        run: python -m py_compile wireless_transfer.py
+
+  windows-compatibility:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Run protocol tests on Windows
+        run: python -m unittest discover -s tests -v
+      - name: Compile source on Windows
+        run: python -m py_compile wireless_transfer.py

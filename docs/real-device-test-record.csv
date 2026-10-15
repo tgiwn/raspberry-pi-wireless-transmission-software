@@ -1,0 +1,1 @@
+run_id,date_time,receiver_device_os,receiver_wifi_ipv4,sender_device_os,network_type,bytes_sent,elapsed_seconds,average_mib_per_second,source_sha256,received_sha256,receiver_free_bytes_before,receiver_log_or_error,pass

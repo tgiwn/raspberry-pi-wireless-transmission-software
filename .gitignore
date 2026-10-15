@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+received/
+*.part
+.DS_Store
+Thumbs.db
+.env
+
+# Local test/coverage output
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+.nyc_output/
